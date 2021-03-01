@@ -1,0 +1,52 @@
+version: "3.2"
+services:
+  nginx:
+    build: ./docker/nginx
+    container_name: wiley-nginx
+    privileged: true
+    ports:
+      - 8181:80
+      - 8282:443
+    networks:
+      - default
+      - wiley-gateway
+    volumes:
+      - ./:/app
+      - ./docker/nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./docker/nginx/app.conf:/etc/nginx/conf.d/default.conf
+      - ./docker/nginx/certificate.crt:/etc/nginx/conf.d/certificate.crt
+      - ./docker/nginx/certificate.key:/etc/nginx/conf.d/certificate.key
+      - ./docker/nginx/logs:/var/log/nginx
+
+  php:
+    build:
+      context: ./
+      dockerfile: ./docker/php/Dockerfile
+    container_name: wiley-php
+    privileged: true
+    networks:
+      - default
+      - wiley-gateway
+    volumes:
+      - ./:/app
+      - ./docker/php/config:/usr/local/etc/php
+      - ./docker/php/logs:/var/log/php
+    environment:
+      PHP_IDE_CONFIG: serverName=docker
+      XDEBUG_CONFIG: idekey=wiley
+      XDEBUG_SESSION: wiley
+
+  redis:
+    build: ./docker/redis
+    container_name: wiley-redis
+    privileged: true
+    ports:
+      - 6379:6379
+    deploy:
+      resources:
+        limits:
+          memory: 2g
+
+networks:
+  wiley-gateway:
+    external: true

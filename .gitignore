@@ -1,0 +1,14 @@
+.idea/
+*.log
+.env
+
+# Docker logs e configs
+/docker/nginx/logs/
+/docker/php/logs/
+
+# Environment files
+/environment/production.env
+/environment/production*
+
+# Dependencies
+/vendor/
