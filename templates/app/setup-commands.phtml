@@ -1,0 +1,9 @@
+<pre>
+<span class="code-text">$ ln -sf environment/development.env .env</span>
+<span class="code-text">$ sysctl -w vm.max_map_count=262144</span>
+<span class="code-text">$ sudo sysctl -w fs.file-max=65536</span>
+<span class="code-text">$ ulimit -n 65536</span>
+<span class="code-text">$ ulimit -u 4096</span>
+<span class="code-text">$ docker network create wiley-gateway</span>
+<span class="code-text">$ docker-compose up -d --build</span>
+</pre>
