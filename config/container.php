@@ -9,7 +9,11 @@ use WileyTechnicalChallenge\SimpleJsonRequest;
 $container = new Container();
 
 $container['cache_client'] = static function () {
-    return new CacheClientFacade(getenv('REDIS_HOST'), (int)getenv('REDIS_PORT'));
+    return new CacheClientFacade(
+        getenv('REDIS_HOST'),
+        (int)getenv('REDIS_PORT'),
+        getenv('REDIS_PASS')
+    );
 };
 
 $container['cache_manager'] = static function ($c) {
