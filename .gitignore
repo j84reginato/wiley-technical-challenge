@@ -1,6 +1,7 @@
 .idea/
 *.log
 .env
+.phpunit.result.cache
 
 # Symbolic link files
 /bin/php-cs-fixer

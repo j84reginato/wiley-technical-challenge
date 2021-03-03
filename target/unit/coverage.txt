@@ -1,0 +1,16 @@
+
+
+Code Coverage Report:    
+  2021-03-03 08:25:57    
+                         
+ Summary:                
+  Classes: 66.67% (2/3)  
+  Methods: 92.31% (24/26)
+  Lines:   92.96% (66/71)
+
+WileyTechnicalChallenge\CacheClientFacade
+  Methods: 100.00% ( 7/ 7)   Lines: 100.00% ( 14/ 14)
+WileyTechnicalChallenge\CacheManager
+  Methods: 100.00% ( 8/ 8)   Lines: 100.00% ( 11/ 11)
+WileyTechnicalChallenge\SimpleJsonRequest
+  Methods:  81.82% ( 9/11)   Lines:  89.13% ( 41/ 46)
