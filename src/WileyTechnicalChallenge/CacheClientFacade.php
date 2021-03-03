@@ -20,8 +20,7 @@ final class CacheClientFacade
         string $host = '172.17.0.1',
         int $port = 6379,
         string $pass = ''
-    )
-    {
+    ) {
         $this->cacheClient = new Redis();
         $this->cacheClient->connect($host, $port);
         $this->cacheClient->setOption(Redis::OPT_SERIALIZER, Redis::SERIALIZER_PHP);
