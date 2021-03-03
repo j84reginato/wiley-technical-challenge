@@ -1,0 +1,57 @@
+<?php $this->layout('layout::default', ['title' => 'Home']) ?>
+
+<a href="#top" class="text-muted back-to-top"><em class="fa fa-toggle-up"></em>&nbsp;Back to top</a>
+<div class="content">
+    <div itemtype="http://schema.org/SoftwareSourceCode">
+        <main>
+            <div class="px-3">
+                <div class="container-fluid">
+                    <div class="row">
+                        <?= $this->insert('app::nav') ?>
+                        <div class="repository-content content">
+                            <div class="Box Box--condensed">
+                                <div class="Box-body p-5">
+                                    <article class="markdown-body container-lg" itemprop="text">
+                                        <h1>
+                                            <a id="home" class="anchor" aria-hidden="true" href="#home">
+                                                <svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true">
+                                                    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+                                                </svg>
+                                            </a>
+                                            Technical challenge
+                                        </h1>
+                                        <p>Technical challenge for a developer position at <strong>Wiley</strong>.</p>
+                                        <h2>
+                                            <a id="setup-do-ambiente-de-desenvolvimento" class="anchor" aria-hidden="true" href="#setup-do-ambiente-de-desenvolvimento">
+                                                <svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true">
+                                                    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+                                                </svg>
+                                            </a>
+                                            Setting up the development environment
+                                        </h2>
+                                        <p>The application provides a <em>docker-compose.yml</em> for use with <a href="https://docs.docker.com/compose/" target="_blank" rel="noopener">docker-compose</a>.</p>
+                                        <p>The following services will be performed:</p>
+                                        <ul>
+                                            <li><strong>wiley-nginx</strong>: image: nginx:latest</li>
+                                            <li><strong>wiley-php</strong>: image: php:8.0-fpm</li>
+                                            <li><strong>wiley-redis</strong>: image: redis:latest</li>
+                                        </ul>
+                                        <p>Build and start the containers using the commands:</p>
+                                        <div class="highlight highlight-source-shell">
+                                            <?= $this->insert('app::setup-commands') ?>
+                                        </div>
+                                        <p>Or simply using the shortcut provided:</p>
+                                        <div class="highlight highlight-source-shell">
+                                            <pre><span class="code-text">$ bin/runenv.sh</span></pre>
+                                        </div>
+                                        <p>At this point, you can visit <a href="http://localhost:8181" rel="noopener">http://localhost:8181</a> (HTTP/HTTP1.1) our <a href="https://localhost:8282" rel="noopener">https://localhost:8282</a> (HTTPS/HTTP2.0) to test application execution. </p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
