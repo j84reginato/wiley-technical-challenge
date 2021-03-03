@@ -1,0 +1,63 @@
+{
+  "name": "j84reginato/wiley-technical-challenge",
+  "description": "Technical challenge for a developer position at Wiley.",
+  "type": "project",
+  "license": "proprietary",
+  "keywords": [
+    "wiley",
+    "technical",
+    "challenge"
+  ],
+  "homepage": "https://github.com/j84reginato/wiley-technical-challenge",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "bin-dir": "bin/",
+    "sort-packages": true
+  },
+  "extra": {
+    "laminas": {
+      "component-whitelist": [
+        "phpredis/phpredis",
+        "pimple/pimple",
+        "vlucas/phpdotenv"
+      ]
+    }
+  },
+  "require": {
+    "php": "^8.0",
+    "ext-redis": "*",
+    "league/plates": "3.*",
+    "pimple/pimple": "^3.3",
+    "vlucas/phpdotenv": "^5.3"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^2.18",
+    "phpunit/phpunit": "^9.5",
+    "roave/security-advisories": "dev-master",
+    "squizlabs/php_codesniffer": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "WileyTechnicalChallenge\\": "src/WileyTechnicalChallenge/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "WileyTechnicalChallenge\\": "test/WileyTechnicalChallenge/"
+    },
+    "classmap": [
+      "test/"
+    ]
+  },
+  "scripts": {
+    "check": [
+      "@cs-check",
+      "@test"
+    ],
+    "cs-check": "./bin/phpcs -w -p",
+    "cs-fix": "./bin/phpcbf",
+    "tests": "./bin/phpunit --configuration phpunit.xml --testsuite unit-tests",
+    "tests-coverage": "./bin/phpunit --configuration phpunit.xml --testsuite unit-tests --coverage-html public/coverage/unit --coverage-clover target/unit/coverage.xml --coverage-text='target/unit/coverage.txt' --log-junit target/unit/report.xml"
+  }
+}

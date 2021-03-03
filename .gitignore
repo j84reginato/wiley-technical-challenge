@@ -2,6 +2,13 @@
 *.log
 .env
 
+# Symbolic link files
+/bin/php-cs-fixer
+/bin/php-parse
+/bin/phpcbf
+/bin/phpcs
+/bin/phpunit
+
 # Docker logs e configs
 /docker/nginx/logs/
 /docker/php/logs/
