@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<ruleset name="Wiley technical challenge coding standard">
+    <description>Wiley technical challenge coding standard</description>
+
+    <!-- display progress -->
+    <arg name="colors"/>
+
+    <!-- inherit rates from: -->
+    <rule ref="PSR12"/>
+    <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
+    <rule ref="Squiz.WhiteSpace.SuperfluousWhitespace">
+        <properties>
+            <property name="ignoreBlankLines" id="false"/>
+        </properties>
+    </rule>
+
+    <!-- Paths to check -->
+    <file>config</file>
+    <file>src</file>
+    <file>test</file>
+
+    <!-- Exclude patterns -->
+    <exclude-pattern>tests/Bootstrap.php</exclude-pattern>
+</ruleset>
