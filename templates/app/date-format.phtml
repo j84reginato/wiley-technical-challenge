@@ -1,0 +1,66 @@
+<?php $this->layout('layout::default', ['title' => 'Date format']) ?>
+
+<?php $this->push('stylesheets') ?>
+<link type="text/css" rel="stylesheet" href="/assets/css/pages/component.css">
+<?php $this->end() ?>
+
+<a href="#top" class="text-muted back-to-top"><em class="fa fa-toggle-up"></em>&nbsp;Back to top</a>
+<div class="content">
+    <div itemtype="http://schema.org/SoftwareSourceCode">
+        <main>
+            <div class="px-3">
+                <div class="container-fluid">
+                    <div class="row">
+                        <?= $this->insert('app::nav') ?>
+                        <div class="repository-content content">
+                            <div class="Box Box--condensed">
+                                <div class="Box-body p-5">
+                                    <article class="markdown-body container-lg" itemprop="text">
+                                        <h1>
+                                            <a id="date-format" class="anchor" aria-hidden="true" href="#date-format">
+                                                <svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true">
+                                                    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+                                                </svg>
+                                            </a>
+                                            2. Date format
+                                        </h1>
+                                        <div id="date-formatting"></div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+
+<?php $this->push('javascript') ?>
+<script src="/assets/js/pages/date-format.js"></script>
+<script>
+    // This will create elements for testing, don't change this code
+    (() => {
+        const MS_PER_MINUTE = 60000
+        const NOW = new Date()
+        let minutes = [0, 1, 30, 60, 6 * 60, 23 * 60, 24 * 60]
+        let dates = []
+
+        minutes.forEach((i) => dates.push(new Date(NOW - i * MS_PER_MINUTE)))
+
+        dates.forEach((item) => {
+            let el = document.createElement("div")
+            el.innerHTML = "Started "
+
+            let dt = document.createElement('span')
+            dt.className = 'js-date-format'
+            dt.innerHTML = item.toISOString()
+            el.appendChild(dt)
+            document.getElementById("date-formatting").appendChild(el)
+        })
+    })();
+    (() => {
+        timeElapsed.initialize();
+    })();
+</script>
+<?php $this->end() ?>
