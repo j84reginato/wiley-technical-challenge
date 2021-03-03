@@ -24,7 +24,10 @@ final class CacheClientFacade
         $this->cacheClient = new Redis();
         $this->cacheClient->connect($host, $port);
         $this->cacheClient->setOption(Redis::OPT_SERIALIZER, Redis::SERIALIZER_PHP);
-        $this->cacheClient->auth($pass);
+
+        if ($pass) {
+            $this->cacheClient->auth($pass);
+        }
     }
 
     /**

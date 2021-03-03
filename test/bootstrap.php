@@ -14,11 +14,6 @@ copy(__DIR__ . '/../environment/test.env', __DIR__ . '/.env');
 $dotenv = Dotenv::createUnsafeImmutable(__DIR__ . '/../');
 $dotenv->load();
 
-if (getenv('APPLICATION_ENV') !== 'production') {
-    error_reporting(E_ALL);
-    ini_set('display_errors', '1');
-}
-
 $container = require __DIR__ . '/../config/container.php';
 
 /** @var SimpleJsonRequest $simpleJsonRequest */

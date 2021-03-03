@@ -160,19 +160,19 @@ final class SimpleJsonRequestTest extends TestCase
     {
         return [
             [
+                'http://www.google.com/search',
+                ['q' => 'Wiley'],
+            ],
+            [
+                'http://www.google.com/search',
+                ['q' => 'Wiley'],
+            ],
+            [
                 'https://httpbin.org/get',
             ],
             [
                 'https://httpbin.org/get',
                 ['name' => 'Wiley'],
-            ],
-            [
-                'http://www.google.com/search',
-                ['q' => 'Wiley'],
-            ],
-            [
-                'http://www.google.com/search',
-                ['q' => 'Wiley'],
             ],
         ];
     }

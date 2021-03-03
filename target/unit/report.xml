@@ -1,98 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="" tests="22" assertions="43" errors="0" warnings="0" failures="0" skipped="0" time="9.167722">
-    <testsuite name="unit-tests" tests="22" assertions="43" errors="0" warnings="0" failures="0" skipped="0" time="9.167722">
-      <testsuite name="WileyTechnicalChallenge\CacheClientFacadeTest" file="/app/test/WileyTechnicalChallenge/CacheClientFacadeTest.php" tests="6" assertions="14" errors="0" warnings="0" failures="0" skipped="0" time="2.016834">
-        <testcase name="testSetHash" class="WileyTechnicalChallenge\CacheClientFacadeTest" classname="WileyTechnicalChallenge.CacheClientFacadeTest" file="/app/test/WileyTechnicalChallenge/CacheClientFacadeTest.php" line="35" assertions="2" time="0.003547">
+  <testsuite name="" tests="22" assertions="43" errors="0" warnings="0" failures="0" skipped="0" time="9.829353">
+    <testsuite name="unit-tests" tests="22" assertions="43" errors="0" warnings="0" failures="0" skipped="0" time="9.829353">
+      <testsuite name="WileyTechnicalChallenge\CacheClientFacadeTest" file="/opt/project/test/WileyTechnicalChallenge/CacheClientFacadeTest.php" tests="6" assertions="14" errors="0" warnings="0" failures="0" skipped="0" time="2.010324">
+        <testcase name="testSetHash" class="WileyTechnicalChallenge\CacheClientFacadeTest" classname="WileyTechnicalChallenge.CacheClientFacadeTest" file="/opt/project/test/WileyTechnicalChallenge/CacheClientFacadeTest.php" line="35" assertions="2" time="0.001965">
           <system-out>Testing the method WileyTechnicalChallenge\CacheClientFacadeTest::testSetHash with parameters: none.
 </system-out>
         </testcase>
-        <testcase name="testGetHash" class="WileyTechnicalChallenge\CacheClientFacadeTest" classname="WileyTechnicalChallenge.CacheClientFacadeTest" file="/app/test/WileyTechnicalChallenge/CacheClientFacadeTest.php" line="46" assertions="2" time="0.000787">
+        <testcase name="testGetHash" class="WileyTechnicalChallenge\CacheClientFacadeTest" classname="WileyTechnicalChallenge.CacheClientFacadeTest" file="/opt/project/test/WileyTechnicalChallenge/CacheClientFacadeTest.php" line="46" assertions="2" time="0.000500">
           <system-out>Testing the method WileyTechnicalChallenge\CacheClientFacadeTest::testGetHash with parameters: none.
 </system-out>
         </testcase>
-        <testcase name="testHasHash" class="WileyTechnicalChallenge\CacheClientFacadeTest" classname="WileyTechnicalChallenge.CacheClientFacadeTest" file="/app/test/WileyTechnicalChallenge/CacheClientFacadeTest.php" line="64" assertions="4" time="0.002516">
+        <testcase name="testHasHash" class="WileyTechnicalChallenge\CacheClientFacadeTest" classname="WileyTechnicalChallenge.CacheClientFacadeTest" file="/opt/project/test/WileyTechnicalChallenge/CacheClientFacadeTest.php" line="64" assertions="4" time="0.000928">
           <system-out>Testing the method WileyTechnicalChallenge\CacheClientFacadeTest::testHasHash with parameters: none.
 </system-out>
         </testcase>
-        <testcase name="testTerminate" class="WileyTechnicalChallenge\CacheClientFacadeTest" classname="WileyTechnicalChallenge.CacheClientFacadeTest" file="/app/test/WileyTechnicalChallenge/CacheClientFacadeTest.php" line="82" assertions="3" time="2.001999">
+        <testcase name="testTerminate" class="WileyTechnicalChallenge\CacheClientFacadeTest" classname="WileyTechnicalChallenge.CacheClientFacadeTest" file="/opt/project/test/WileyTechnicalChallenge/CacheClientFacadeTest.php" line="82" assertions="3" time="2.001657">
           <system-out>Testing the method WileyTechnicalChallenge\CacheClientFacadeTest::testTerminate with parameters: none.
 </system-out>
         </testcase>
-        <testcase name="testDelete" class="WileyTechnicalChallenge\CacheClientFacadeTest" classname="WileyTechnicalChallenge.CacheClientFacadeTest" file="/app/test/WileyTechnicalChallenge/CacheClientFacadeTest.php" line="97" assertions="2" time="0.005006">
+        <testcase name="testDelete" class="WileyTechnicalChallenge\CacheClientFacadeTest" classname="WileyTechnicalChallenge.CacheClientFacadeTest" file="/opt/project/test/WileyTechnicalChallenge/CacheClientFacadeTest.php" line="97" assertions="2" time="0.003243">
           <system-out>Testing the method WileyTechnicalChallenge\CacheClientFacadeTest::testDelete with parameters: none.
 </system-out>
         </testcase>
-        <testcase name="testClearAll" class="WileyTechnicalChallenge\CacheClientFacadeTest" classname="WileyTechnicalChallenge.CacheClientFacadeTest" file="/app/test/WileyTechnicalChallenge/CacheClientFacadeTest.php" line="109" assertions="1" time="0.002979">
+        <testcase name="testClearAll" class="WileyTechnicalChallenge\CacheClientFacadeTest" classname="WileyTechnicalChallenge.CacheClientFacadeTest" file="/opt/project/test/WileyTechnicalChallenge/CacheClientFacadeTest.php" line="109" assertions="1" time="0.002030">
           <system-out>Testing the method WileyTechnicalChallenge\CacheClientFacadeTest::testClearAll with parameters: none.
 </system-out>
         </testcase>
       </testsuite>
-      <testsuite name="WileyTechnicalChallenge\CacheManagerTest" file="/app/test/WileyTechnicalChallenge/CacheManagerTest.php" tests="7" assertions="20" errors="0" warnings="0" failures="0" skipped="0" time="2.038567">
-        <testcase name="testStore" class="WileyTechnicalChallenge\CacheManagerTest" classname="WileyTechnicalChallenge.CacheManagerTest" file="/app/test/WileyTechnicalChallenge/CacheManagerTest.php" line="37" assertions="2" time="0.006611">
+      <testsuite name="WileyTechnicalChallenge\CacheManagerTest" file="/opt/project/test/WileyTechnicalChallenge/CacheManagerTest.php" tests="7" assertions="20" errors="0" warnings="0" failures="0" skipped="0" time="2.030339">
+        <testcase name="testStore" class="WileyTechnicalChallenge\CacheManagerTest" classname="WileyTechnicalChallenge.CacheManagerTest" file="/opt/project/test/WileyTechnicalChallenge/CacheManagerTest.php" line="37" assertions="2" time="0.003857">
           <system-out>Testing the method WileyTechnicalChallenge\CacheManagerTest::testStore with parameters: none.
 </system-out>
         </testcase>
-        <testcase name="testRetrieve" class="WileyTechnicalChallenge\CacheManagerTest" classname="WileyTechnicalChallenge.CacheManagerTest" file="/app/test/WileyTechnicalChallenge/CacheManagerTest.php" line="50" assertions="8" time="0.013870">
+        <testcase name="testRetrieve" class="WileyTechnicalChallenge\CacheManagerTest" classname="WileyTechnicalChallenge.CacheManagerTest" file="/opt/project/test/WileyTechnicalChallenge/CacheManagerTest.php" line="50" assertions="8" time="0.012615">
           <system-out>Testing the method WileyTechnicalChallenge\CacheManagerTest::testRetrieve with parameters: none.
 </system-out>
         </testcase>
-        <testcase name="testHasHash" class="WileyTechnicalChallenge\CacheManagerTest" classname="WileyTechnicalChallenge.CacheManagerTest" file="/app/test/WileyTechnicalChallenge/CacheManagerTest.php" line="80" assertions="3" time="0.002755">
+        <testcase name="testHasHash" class="WileyTechnicalChallenge\CacheManagerTest" classname="WileyTechnicalChallenge.CacheManagerTest" file="/opt/project/test/WileyTechnicalChallenge/CacheManagerTest.php" line="80" assertions="3" time="0.003638">
           <system-out>Testing the method WileyTechnicalChallenge\CacheManagerTest::testHasHash with parameters: none.
 </system-out>
         </testcase>
-        <testcase name="testTerminate" class="WileyTechnicalChallenge\CacheManagerTest" classname="WileyTechnicalChallenge.CacheManagerTest" file="/app/test/WileyTechnicalChallenge/CacheManagerTest.php" line="95" assertions="3" time="2.003361">
+        <testcase name="testTerminate" class="WileyTechnicalChallenge\CacheManagerTest" classname="WileyTechnicalChallenge.CacheManagerTest" file="/opt/project/test/WileyTechnicalChallenge/CacheManagerTest.php" line="95" assertions="3" time="2.004167">
           <system-out>Testing the method WileyTechnicalChallenge\CacheManagerTest::testTerminate with parameters: none.
 </system-out>
         </testcase>
-        <testcase name="testDelete" class="WileyTechnicalChallenge\CacheManagerTest" classname="WileyTechnicalChallenge.CacheManagerTest" file="/app/test/WileyTechnicalChallenge/CacheManagerTest.php" line="110" assertions="2" time="0.005474">
+        <testcase name="testDelete" class="WileyTechnicalChallenge\CacheManagerTest" classname="WileyTechnicalChallenge.CacheManagerTest" file="/opt/project/test/WileyTechnicalChallenge/CacheManagerTest.php" line="110" assertions="2" time="0.003424">
           <system-out>Testing the method WileyTechnicalChallenge\CacheManagerTest::testDelete with parameters: none.
 </system-out>
         </testcase>
-        <testcase name="testClearAll" class="WileyTechnicalChallenge\CacheManagerTest" classname="WileyTechnicalChallenge.CacheManagerTest" file="/app/test/WileyTechnicalChallenge/CacheManagerTest.php" line="122" assertions="1" time="0.003752">
+        <testcase name="testClearAll" class="WileyTechnicalChallenge\CacheManagerTest" classname="WileyTechnicalChallenge.CacheManagerTest" file="/opt/project/test/WileyTechnicalChallenge/CacheManagerTest.php" line="122" assertions="1" time="0.001983">
           <system-out>Testing the method WileyTechnicalChallenge\CacheManagerTest::testClearAll with parameters: none.
 </system-out>
         </testcase>
-        <testcase name="testGetKeyByArray" class="WileyTechnicalChallenge\CacheManagerTest" classname="WileyTechnicalChallenge.CacheManagerTest" file="/app/test/WileyTechnicalChallenge/CacheManagerTest.php" line="132" assertions="1" time="0.002743">
+        <testcase name="testGetKeyByArray" class="WileyTechnicalChallenge\CacheManagerTest" classname="WileyTechnicalChallenge.CacheManagerTest" file="/opt/project/test/WileyTechnicalChallenge/CacheManagerTest.php" line="132" assertions="1" time="0.000656">
           <system-out>Testing the method WileyTechnicalChallenge\CacheManagerTest::testGetKeyByArray with parameters: none.
 </system-out>
         </testcase>
       </testsuite>
-      <testsuite name="WileyTechnicalChallenge\SimpleJsonRequestTest" file="/app/test/WileyTechnicalChallenge/SimpleJsonRequestTest.php" tests="9" assertions="9" errors="0" warnings="0" failures="0" skipped="0" time="5.112321">
-        <testsuite name="WileyTechnicalChallenge\SimpleJsonRequestTest::testGet" tests="4" assertions="4" errors="0" warnings="0" failures="0" skipped="0" time="2.258187">
-          <testcase name="testGet with data set #0" class="WileyTechnicalChallenge\SimpleJsonRequestTest" classname="WileyTechnicalChallenge.SimpleJsonRequestTest" file="/app/test/WileyTechnicalChallenge/SimpleJsonRequestTest.php" line="46" assertions="1" time="0.745482">
+      <testsuite name="WileyTechnicalChallenge\SimpleJsonRequestTest" file="/opt/project/test/WileyTechnicalChallenge/SimpleJsonRequestTest.php" tests="9" assertions="9" errors="0" warnings="0" failures="0" skipped="0" time="5.788691">
+        <testsuite name="WileyTechnicalChallenge\SimpleJsonRequestTest::testGet" tests="4" assertions="4" errors="0" warnings="0" failures="0" skipped="0" time="3.086577">
+          <testcase name="testGet with data set #0" class="WileyTechnicalChallenge\SimpleJsonRequestTest" classname="WileyTechnicalChallenge.SimpleJsonRequestTest" file="/opt/project/test/WileyTechnicalChallenge/SimpleJsonRequestTest.php" line="46" assertions="1" time="1.665961">
+            <system-out>Testing the method WileyTechnicalChallenge\SimpleJsonRequestTest::testGet with parameters: http://www.google.com/search and {"q":"Wiley"}.</system-out>
+          </testcase>
+          <testcase name="testGet with data set #1" class="WileyTechnicalChallenge\SimpleJsonRequestTest" classname="WileyTechnicalChallenge.SimpleJsonRequestTest" file="/opt/project/test/WileyTechnicalChallenge/SimpleJsonRequestTest.php" line="46" assertions="1" time="0.008207">
+            <system-out>Testing the method WileyTechnicalChallenge\SimpleJsonRequestTest::testGet with parameters: http://www.google.com/search and {"q":"Wiley"}.</system-out>
+          </testcase>
+          <testcase name="testGet with data set #2" class="WileyTechnicalChallenge\SimpleJsonRequestTest" classname="WileyTechnicalChallenge.SimpleJsonRequestTest" file="/opt/project/test/WileyTechnicalChallenge/SimpleJsonRequestTest.php" line="46" assertions="1" time="0.611152">
             <system-out>Testing the method WileyTechnicalChallenge\SimpleJsonRequestTest::testGet with parameters: https://httpbin.org/get and [].</system-out>
           </testcase>
-          <testcase name="testGet with data set #1" class="WileyTechnicalChallenge\SimpleJsonRequestTest" classname="WileyTechnicalChallenge.SimpleJsonRequestTest" file="/app/test/WileyTechnicalChallenge/SimpleJsonRequestTest.php" line="46" assertions="1" time="0.650925">
+          <testcase name="testGet with data set #3" class="WileyTechnicalChallenge\SimpleJsonRequestTest" classname="WileyTechnicalChallenge.SimpleJsonRequestTest" file="/opt/project/test/WileyTechnicalChallenge/SimpleJsonRequestTest.php" line="46" assertions="1" time="0.801257">
             <system-out>Testing the method WileyTechnicalChallenge\SimpleJsonRequestTest::testGet with parameters: https://httpbin.org/get and {"name":"Wiley"}.</system-out>
           </testcase>
-          <testcase name="testGet with data set #2" class="WileyTechnicalChallenge\SimpleJsonRequestTest" classname="WileyTechnicalChallenge.SimpleJsonRequestTest" file="/app/test/WileyTechnicalChallenge/SimpleJsonRequestTest.php" line="46" assertions="1" time="0.852639">
-            <system-out>Testing the method WileyTechnicalChallenge\SimpleJsonRequestTest::testGet with parameters: http://www.google.com/search and {"q":"Wiley"}.</system-out>
-          </testcase>
-          <testcase name="testGet with data set #3" class="WileyTechnicalChallenge\SimpleJsonRequestTest" classname="WileyTechnicalChallenge.SimpleJsonRequestTest" file="/app/test/WileyTechnicalChallenge/SimpleJsonRequestTest.php" line="46" assertions="1" time="0.009141">
-            <system-out>Testing the method WileyTechnicalChallenge\SimpleJsonRequestTest::testGet with parameters: http://www.google.com/search and {"q":"Wiley"}.</system-out>
-          </testcase>
         </testsuite>
-        <testsuite name="WileyTechnicalChallenge\SimpleJsonRequestTest::testPost" tests="2" assertions="2" errors="0" warnings="0" failures="0" skipped="0" time="0.624057">
-          <testcase name="testPost with data set #0" class="WileyTechnicalChallenge\SimpleJsonRequestTest" classname="WileyTechnicalChallenge.SimpleJsonRequestTest" file="/app/test/WileyTechnicalChallenge/SimpleJsonRequestTest.php" line="70" assertions="1" time="0.617442">
+        <testsuite name="WileyTechnicalChallenge\SimpleJsonRequestTest::testPost" tests="2" assertions="2" errors="0" warnings="0" failures="0" skipped="0" time="0.709995">
+          <testcase name="testPost with data set #0" class="WileyTechnicalChallenge\SimpleJsonRequestTest" classname="WileyTechnicalChallenge.SimpleJsonRequestTest" file="/opt/project/test/WileyTechnicalChallenge/SimpleJsonRequestTest.php" line="70" assertions="1" time="0.703173">
             <system-out>Testing the method WileyTechnicalChallenge\SimpleJsonRequestTest::testPost with parameters: https://httpbin.org/post and [].</system-out>
           </testcase>
-          <testcase name="testPost with data set #1" class="WileyTechnicalChallenge\SimpleJsonRequestTest" classname="WileyTechnicalChallenge.SimpleJsonRequestTest" file="/app/test/WileyTechnicalChallenge/SimpleJsonRequestTest.php" line="70" assertions="1" time="0.006614">
+          <testcase name="testPost with data set #1" class="WileyTechnicalChallenge\SimpleJsonRequestTest" classname="WileyTechnicalChallenge.SimpleJsonRequestTest" file="/opt/project/test/WileyTechnicalChallenge/SimpleJsonRequestTest.php" line="70" assertions="1" time="0.006822">
             <system-out>Testing the method WileyTechnicalChallenge\SimpleJsonRequestTest::testPost with parameters: https://httpbin.org/post and [].</system-out>
           </testcase>
         </testsuite>
-        <testsuite name="WileyTechnicalChallenge\SimpleJsonRequestTest::testPut" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.805192">
-          <testcase name="testPut with data set #0" class="WileyTechnicalChallenge\SimpleJsonRequestTest" classname="WileyTechnicalChallenge.SimpleJsonRequestTest" file="/app/test/WileyTechnicalChallenge/SimpleJsonRequestTest.php" line="94" assertions="1" time="0.805192">
+        <testsuite name="WileyTechnicalChallenge\SimpleJsonRequestTest::testPut" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.799508">
+          <testcase name="testPut with data set #0" class="WileyTechnicalChallenge\SimpleJsonRequestTest" classname="WileyTechnicalChallenge.SimpleJsonRequestTest" file="/opt/project/test/WileyTechnicalChallenge/SimpleJsonRequestTest.php" line="94" assertions="1" time="0.799508">
             <system-out>Testing the method WileyTechnicalChallenge\SimpleJsonRequestTest::testPut with parameters: https://httpbin.org/put and {"id":1234}.</system-out>
           </testcase>
         </testsuite>
-        <testsuite name="WileyTechnicalChallenge\SimpleJsonRequestTest::testPatch" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.609854">
-          <testcase name="testPatch with data set #0" class="WileyTechnicalChallenge\SimpleJsonRequestTest" classname="WileyTechnicalChallenge.SimpleJsonRequestTest" file="/app/test/WileyTechnicalChallenge/SimpleJsonRequestTest.php" line="118" assertions="1" time="0.609854">
+        <testsuite name="WileyTechnicalChallenge\SimpleJsonRequestTest::testPatch" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.577969">
+          <testcase name="testPatch with data set #0" class="WileyTechnicalChallenge\SimpleJsonRequestTest" classname="WileyTechnicalChallenge.SimpleJsonRequestTest" file="/opt/project/test/WileyTechnicalChallenge/SimpleJsonRequestTest.php" line="118" assertions="1" time="0.577969">
             <system-out>Testing the method WileyTechnicalChallenge\SimpleJsonRequestTest::testPatch with parameters: https://httpbin.org/patch and [].</system-out>
           </testcase>
         </testsuite>
-        <testsuite name="WileyTechnicalChallenge\SimpleJsonRequestTest::testDelete" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.815031">
-          <testcase name="testDelete with data set #0" class="WileyTechnicalChallenge\SimpleJsonRequestTest" classname="WileyTechnicalChallenge.SimpleJsonRequestTest" file="/app/test/WileyTechnicalChallenge/SimpleJsonRequestTest.php" line="142" assertions="1" time="0.815031">
+        <testsuite name="WileyTechnicalChallenge\SimpleJsonRequestTest::testDelete" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.614643">
+          <testcase name="testDelete with data set #0" class="WileyTechnicalChallenge\SimpleJsonRequestTest" classname="WileyTechnicalChallenge.SimpleJsonRequestTest" file="/opt/project/test/WileyTechnicalChallenge/SimpleJsonRequestTest.php" line="142" assertions="1" time="0.614643">
             <system-out>Testing the method WileyTechnicalChallenge\SimpleJsonRequestTest::testDelete with parameters: https://httpbin.org/delete and {"id":1234}.</system-out>
           </testcase>
         </testsuite>

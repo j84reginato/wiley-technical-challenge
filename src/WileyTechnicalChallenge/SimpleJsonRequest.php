@@ -122,7 +122,7 @@ final class SimpleJsonRequest
         ) {
             return [
                 'response' => $this->cacheManager->retrieve($hashKey, 'response'),
-                'mode' => 'REQUEST CACHED'
+                'mode'     => 'REQUEST CACHED',
             ];
         }
 
@@ -132,16 +132,16 @@ final class SimpleJsonRequest
     /**
      * @param string $hashKey
      * @param string $field
-     * @param array  $value
+     * @param array  $paramValue
      *
      * @return bool
      */
-    private function compare(string $hashKey, string $field, array $value): bool
+    private function compare(string $hashKey, string $field, array $paramValue): bool
     {
-        $data = $this->cacheManager->retrieve($hashKey, $field);
+        $cachedValue = $this->cacheManager->retrieve($hashKey, $field);
 
         try {
-            return json_decode($data, true, 512, JSON_THROW_ON_ERROR) === $value;
+            return json_decode($cachedValue, true, 512, JSON_THROW_ON_ERROR) === $paramValue;
         } catch (JsonException $e) {
             echo $e->getMessage();
         }
@@ -187,7 +187,7 @@ final class SimpleJsonRequest
 
         return [
             'response' => $response ?? '',
-            'mode' => 'NO CACHED'
+            'mode'     => 'NO CACHED',
         ];
     }
 
