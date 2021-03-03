@@ -1,0 +1,81 @@
+<?php $this->layout('layout::default', ['title' => 'Cache function']) ?>
+
+<a href="#top" class="text-muted back-to-top"><em class="fa fa-toggle-up"></em>&nbsp;Back to top</a>
+<div class="content">
+    <div itemtype="http://schema.org/SoftwareSourceCode">
+        <main>
+            <div class="px-3">
+                <div class="container-fluid">
+                    <div class="row">
+                        <?= $this->insert('app::nav') ?>
+                        <div class="repository-content content">
+                            <div class="Box Box--condensed">
+                                <div class="Box-body p-5">
+                                    <article class="markdown-body container-lg" itemprop="text">
+                                        <h1>
+                                            <a id="cache-function" class="anchor" aria-hidden="true" href="#cache-function">
+                                                <svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true">
+                                                    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+                                                </svg>
+                                            </a>
+                                            1. Cache function
+                                        </h1>
+                                        <h2>
+                                            <a id="GET" class="anchor" aria-hidden="true" href="#GET">
+                                                <svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true">
+                                                    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+                                                </svg>
+                                            </a>
+                                            GET
+                                        </h2>
+                                        <p><?= isset($getMode1) ? $this->e($getMode1) : '' ?></p>
+                                        <p><?= isset($getResponse1) ? $this->e($getResponse1) : '' ?></p>
+                                        <p><?= isset($getMode2) ? $this->e($getMode2) : '' ?></p>
+                                        <p><?= isset($getResponse2) ? $this->e($getResponse2) : '' ?></p>
+                                        <h2>
+                                            <a id="POST" class="anchor" aria-hidden="true" href="#POST">
+                                                <svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true">
+                                                    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+                                                </svg>
+                                            </a>
+                                            POST
+                                        </h2>
+                                        <p><?= isset($postMode1) ? $this->e($postMode1) : '' ?></p>
+                                        <p><?= isset($postResponse1) ? $this->e($postResponse1) : '' ?></p>
+                                        <p><?= isset($postMode2) ? $this->e($postMode2) : '' ?></p>
+                                        <p><?= isset($postResponse2) ? $this->e($postResponse2) : '' ?></p>
+                                        <h2>
+                                            <a id="PUT" class="anchor" aria-hidden="true" href="#PUT">
+                                                <svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true">
+                                                    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+                                                </svg>
+                                            </a>
+                                            PUT
+                                        </h2>
+                                        <p><?= isset($putMode1) ? $this->e($putMode1) : '' ?></p>
+                                        <p><?= isset($putResponse1) ? $this->e($putResponse1) : '' ?></p>
+                                        <p><?= isset($putMode2) ? $this->e($putMode2) : '' ?></p>
+                                        <p><?= isset($putResponse2) ? $this->e($putResponse2) : '' ?></p>
+                                        <h2>
+                                            <a id="DELETE" class="anchor" aria-hidden="true" href="#DELETE">
+                                                <svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true">
+                                                    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+                                                </svg>
+                                            </a>
+                                            DELETE
+                                        </h2>
+                                        <p><?= isset($deleteMode1) ? $this->e($deleteMode1) : '' ?></p>
+                                        <p><?= isset($deleteResponse1) ? $this->e($deleteResponse1) : '' ?></p>
+                                        <p><?= isset($deleteMode2) ? $this->e($deleteMode2) : '' ?></p>
+                                        <p><?= isset($deleteResponse2) ? $this->e($deleteResponse2) : '' ?></p>
+                                    </article>
+                                </div>
+                            </div>
+                            <p class="text-center mt-3"><?= isset($process) ? $this->e($process) : '' ?></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>

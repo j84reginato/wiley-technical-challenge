@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Technical challenge for a developer position at Wiley.">
+        <meta name="author" content="Jonatan Noronha Reginato">
+        <title>Technical challenge - <?= isset($title) ? $this->e($title) : '' ?></title>
+        <link rel="shortcut icon" href="/assets/images/favicon.ico">
+        <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+        <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/core/app.css?<?= time() ?>">
+        <?= $this->section('stylesheets') ?>
+    </head>
+    <body>
+        <div id="root">
+            <div class="main">
+                <div class="navbar navbar-expand bg-dark">
+                    <span class="sidebar-toggle d-flex mr-2">
+                        <em class="hamburger align-self-center"></em>
+                    </span>
+                    <div class="collapse navbar-collapse" aria-expanded="false">
+                        <ul class="ml-auto navbar-nav">
+                            <li class="dropdown nav-item">
+                                <span class="d-none d-sm-inline-block">
+                                    <a href="#">
+                                        <img height="23px" src="/assets/images/wiley-logo-white.svg" class="avatar img-fluid mr-1" alt="">
+                                        <span class="text-dark"></span>
+                                    </a>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <?= $this->section('content') ?>
+                <footer class="footer">
+                    <?php if ($this->section('footer')): ?>
+                        <?= $this->section('footer') ?>
+                    <?php else: ?>
+                        <div class="container-fluid">
+                            <div class="text-muted row">
+                                <div class="text-center col-12">
+                                    <p class="mb-0 text-center"> © 2021 - <span class="text-muted">by Jonatan<strong>Reginato</strong>.</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    <?php endif ?>
+                </footer>
+                <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script>
+                <script src="https://unpkg.com/@popperjs/core@2" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+                <script src="/assets/js/core/app.js?<?= time() ?>"></script>
+                <?= $this->section('javascript') ?>
+            </div>
+        </div>
+    </body>
+</html>
