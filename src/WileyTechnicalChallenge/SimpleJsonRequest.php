@@ -138,15 +138,13 @@ final class SimpleJsonRequest
      */
     private function compare(string $hashKey, string $field, array $paramValue): bool
     {
-        $cachedValue = $this->cacheManager->retrieve($hashKey, $field);
-
         try {
-            return json_decode($cachedValue, true, 512, JSON_THROW_ON_ERROR) === $paramValue;
+            $cachedValue = json_decode($this->cacheManager->retrieve($hashKey, $field), true, 512, JSON_THROW_ON_ERROR);
         } catch (JsonException $e) {
             echo $e->getMessage();
         }
 
-        return false;
+        return ($cachedValue ?? []) === $paramValue;
     }
 
     /**

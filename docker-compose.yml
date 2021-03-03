@@ -35,6 +35,7 @@ services:
       PHP_IDE_CONFIG: serverName=docker
       XDEBUG_CONFIG: idekey=wiley
       XDEBUG_SESSION: wiley
+      XDEBUG_MODE: coverage
 
   redis:
     build: ./docker/redis
